@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICU 또래상담 가이드북</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="icon" type="image/png" href="KakaoTalk_20251023_191520573.jpg" />
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; background-color: #e0f2fe; }
+    .tab-button.active { color: #4f46e5; }
+    .tab-button.active svg { color: #4f46e5; }
+    .content-page { display: none; }
+    .content-page.active { display: block; }
+    /* 홈 화면 */
+    #home.content-page.active {
+      background-color: #e0f2fe;
+      background-image: url('KakaoTalk_20251023_191520573.jpg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      margin: -1.5rem;
+    }
+  </style>
+</head>
+
+<body class="bg-sky-100">
+  <div class="max-w-md mx-auto bg-white min-h-screen shadow-lg relative">
+    <main class="p-6 pb-24 leading-relaxed space-y-4">
+      
+      <!-- 홈 -->
+      <div id="home" class="content-page active"></div>
+
+      <!-- 초기 상담 -->
+      <div id="initial" class="content-page space-y-6">
+        <h2 class="text-2xl font-bold text-indigo-700 text-center">🗣️ 초기 상담 (또래상담)</h2>
+        <div class="bg-indigo-50 p-4 rounded-lg shadow-sm border border-indigo-100">
+          <p class="text-gray-700">
+            친구가 처음으로 고민을 털어놓는 순간이 <strong>초기 상담</strong>이 될 수 있습니다.
+            친구는 긴장하거나 망설일 수 있으니, 편안한 분위기를 만들어주는 것이 중요합니다.
+            또래상담자는 <strong>친구의 이야기를 들어주고 공감하는 역할</strong>을 합니다.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="bg-white p-4 border-l-4 border-indigo-400 rounded-lg shadow-sm">
+            <h3 class="font-semibold text-indigo-700">1️⃣ 인사와 분위기 조성</h3>
+            <p class="text-gray-600 text-sm">친구가 편안하게 느끼도록 눈을 맞추고, 조용하고 따뜻한 말투로 인사하기</p>
+          </div>
+
+          <div class="bg-white p-4 border-l-4 border-indigo-400 rounded-lg shadow-sm">
+            <h3 class="font-semibold text-indigo-700">2️⃣ 경청하기</h3>
+            <p class="text-gray-600 text-sm">중간에 끼어들지 않고, 친구가 끝까지 말할 수 있도록 기다리기</p>
+          </div>
+
+          <div class="bg-white p-4 border-l-4 border-indigo-400 rounded-lg shadow-sm">
+            <h3 class="font-semibold text-indigo-700">3️⃣ 공감 표현하기</h3>
+            <p class="text-gray-600 text-sm">“그랬구나”, “왜 그런지 알 것 같아”처럼 이해와 공감을 전하는 말 사용</p>
+          </div>
+
+          <div class="bg-white p-4 border-l-4 border-indigo-400 rounded-lg shadow-sm">
+            <h3 class="font-semibold text-indigo-700">4️⃣ 도움 제안</h3>
+            <p class="text-gray-600 text-sm">필요하다면 어른이나 전문가와 함께 문제를 해결하도록 제안하기</p>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg shadow-sm">
+          <h3 class="font-semibold text-yellow-800 mb-2">⚠️ 주의사항</h3>
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+            <li><strong>조언보다 경청:</strong> “~해”보다는 “그래서 어떻게 느꼈어?”</li>
+            <li><strong>비밀보장:</strong> 단, 위험한 상황(자해·자살 등)은 반드시 어른에게 알리기</li>
+            <li><strong>혼자 해결하지 않기:</strong> 전문가 도움이 필요한 경우는 즉시 전달</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 접수면접 -->
+      <div id="interview" class="content-page space-y-6">
+        <h2 class="text-2xl font-bold text-indigo-700 text-center">🧩 접수면접 (또래상담)</h2>
+        <div class="bg-green-50 p-4 rounded-lg border border-green-100 shadow-sm">
+          <p class="text-gray-700">
+            접수면접은 친구가 상담을 시작하며 <strong>자신의 주된 고민을 말하는 첫 단계</strong>입니다.
+            이때 상담자는 친구가 편안히 이야기할 수 있도록 신뢰를 쌓는 것이 중요합니다.
+          </p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg shadow-sm">
+          <h3 class="font-semibold text-red-700 mb-2">🚫 피해야 할 질문</h3>
+          <ul class="list-disc list-inside text-red-700 space-y-1 text-sm">
+            <li>“왜 그런 선택을 했어?” (비난처럼 들릴 수 있음)</li>
+            <li>“언제부터 문제가 있었어?” (심문하는 느낌을 줄 수 있음)</li>
+          </ul>
+        </div>
+
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg shadow-sm">
+          <h3 class="font-semibold text-blue-700 mb-2">✅ 부드러운 질문</h3>
+          <ul class="list-disc list-inside text-blue-800 space-y-1 text-sm">
+            <li>“요즘 학교 생활은 어때?”</li>
+            <li>“더 이야기하고 싶은 부분이 있으면 말해줄래?”</li>
+            <li>“그때 기분이 어땠어?”</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 체크리스트 -->
+      <div id="checklist" class="content-page space-y-4">
+        <h2 class="text-2xl font-bold text-gray-800 text-center">📝 또래상담자 체크리스트</h2>
+        <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 space-y-3">
+          <label class="flex items-center"><input type="checkbox" class="h-5 w-5 text-indigo-600"><span class="ml-3">나는 친구를 편안하게 맞이했는가?</span></label>
+          <label class="flex items-center"><input type="checkbox" class="h-5 w-5 text-indigo-600"><span class="ml-3">친구의 말을 끊지 않고 끝까지 들어줬는가?</span></label>
+          <label class="flex items-center"><input type="checkbox" class="h-5 w-5 text-indigo-600"><span class="ml-3">친구의 감정을 확인하고 공감해줬는가?</span></label>
+          <label class="flex items-center"><input type="checkbox" class="h-5 w-5 text-indigo-600"><span class="ml-3">고민의 배경을 조금이라도 파악했는가?</span></label>
+          <label class="flex items-center"><input type="checkbox" class="h-5 w-5 text-indigo-600"><span class="ml-3">필요시 어른이나 전문가에게 도움을 청했는가?</span></label>
+        </div>
+        <button id="reset-checklist" class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg">체크리스트 초기화</button>
+      </div>
+    </main>
+
+    <!-- 하단 탭 -->
+    <footer class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 shadow-inner z-10">
+      <nav id="tabs" class="flex justify-around">
+        <button data-tab="home" class="tab-button active flex flex-col items-center justify-center p-3 text-gray-500">
+          <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9M4 10v10h5v-6h6v6h5V10"></path></svg>
+          <span class="text-xs font-medium">홈</span>
+        </button>
+        <button data-tab="initial" class="tab-button flex flex-col items-center justify-center p-3 text-gray-500">
+          <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4zm-8 8v-6a4 4 0 018 0v6H4z"></path></svg>
+          <span class="text-xs font-medium">초기상담</span>
+        </button>
+        <button data-tab="interview" class="tab-button flex flex-col items-center justify-center p-3 text-gray-500">
+          <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0"></path></svg>
+          <span class="text-xs font-medium">접수면접</span>
+        </button>
+        <button data-tab="checklist" class="tab-button flex flex-col items-center justify-center p-3 text-gray-500">
+          <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12h14V7a2 2 0 00-2-2h-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+          <span class="text-xs font-medium">체크리스트</span>
+        </button>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tab-button');
+      const pages = document.querySelectorAll('.content-page');
+      const resetBtn = document.getElementById('reset-checklist');
+
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.forEach(b => b.classList.remove('active'));
+          pages.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.tab).classList.add('active');
+          window.scrollTo(0, 0);
+        });
+      });
+
+      resetBtn.addEventListener('click', () => {
+        document.querySelectorAll('#checklist input[type="checkbox"]').forEach(c => c.checked = false);
+      });
+
+      if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+    });
+  </script>
+</body>
+</html>

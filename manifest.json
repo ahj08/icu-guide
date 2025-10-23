@@ -1,0 +1,13 @@
+{
+  "name": "ICU 또래상담 가이드북",
+  "short_name": "ICU 가이드북",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e0f2fe",
+  "theme_color": "#4f46e5",
+  "icons": [{
+    "src": "KakaoTalk_20251023_191520573.jpg",
+    "sizes": "512x512",
+    "type": "image/jpeg"
+  }]
+}
